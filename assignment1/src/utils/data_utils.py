@@ -1,14 +1,14 @@
 #%%
 import os
 import tensorflow as tf
-from pathlib import Path
 from PIL import Image
+from pathlib import Path
 from typing import List
 
 #%%
 def load_data() -> List:
     """
-    LOAD ex data
+    LOAD example image data
 
     Returns:
         List: imgs
@@ -29,21 +29,23 @@ def load_data() -> List:
 
 
 #%%
-imgs = load_data()
-tf.shape(imgs[0])
-tf.shape(imgs[1])
+def preprocessing(imgs: List) -> List:
+    """
+    crop and resize example image data
 
-img0 = imgs[0]
-tf.keras.preprocessing.image.array_to_img(img0)
-tf.keras.preprocessing.image.array_to_img(img1)
-tf.kerasimg1[30:230,...]
-img1 = imgs[1]
-img2 = imgs[2][20:220, 10:360, ...]
-img3 = imgs[3][35:235, 60:410, ...]
-tf.keras.preprocessing.image.array_to_img(img2)
-tf.keras.preprocessing.image.array_to_img(img3)
-tf.keras.preprocessing.image.array_to_img(imgs[1][15:215, 10:360, ...])
-tf.keras.preprocessing.image.array_to_img(tf.image.central_crop(imgs[0], 0.7))
-tmp = tf.image.crop_and_resize(tf.expand_dims(imgs[0], 0), boxes=[[0.0, 0.0, 0.5, 0.5]], crop_size = (250, 250), box_indices=[0])
+    Args:
+        imgs (List): imgs
 
+    Returns:
+        List: preprocessed imgs
+    """
+    img0 = imgs[0][100:230, 175:305, ...]
+    img0 = tf.image.resize(img0, (200, 200))
+    img1 = imgs[1][35:155, 165:285, ...]
+    img1 = tf.image.resize(img1, (200, 200))
+    img2 = imgs[2][35:235, 85:285, ...]
+    img3 = imgs[3][35:235, 135:335, ...]
+    imgs = [img0, img1, img2, img3]
+
+    return imgs
 
