@@ -8,7 +8,9 @@ from utils import (
     preprocessing,
     draw_array
 )
+tf.__version__
 
+print(21)
 #%%
 if __name__ == "__main__":
     imgs = load_data()
