@@ -16,9 +16,19 @@ ds_train = tfds.load(
 datasets = iter(ds_train)
 img, label = next(datasets)
 tf.keras.preprocessing.image.array_to_img(img)
-tf.keras.preprocessing.image.array_to_img(img1)
-tf.keras.preprocessing.image.array_to_img(img2)
-tf.keras.preprocessing.image.array_to_img(img3)
+
+img1 = tf.keras.preprocessing.image.array_to_img(img1)
+img2 = tf.keras.preprocessing.image.array_to_img(img2)
+img3 = tf.keras.preprocessing.image.array_to_img(img3)
+img4 = tf.keras.preprocessing.image.array_to_img(img6)
+
+import os
+os.getcwd()
+os.mkdir(f"{os.getcwd()}/ex")
+save_dir = f"{os.getcwd()}/ex"
+
+img4.save(f"{save_dir}/img4.png", "png")
+os.listdir(save_dir)
 
 
 tf.keras.preprocessing.image.array_to_img(
