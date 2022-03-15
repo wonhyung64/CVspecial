@@ -35,3 +35,30 @@ if __name__ == "__main__":
 
 
 #%%
+import numpy as np
+x_in = np.array([[
+  [[2], [1], [2], [0], [1]],
+  [[1], [3], [2], [2], [3]],
+  [[1], [1], [3], [3], [0]],
+  [[2], [2], [0], [1], [1]],
+  [[0], [0], [3], [1], [2]], ]])
+kernel_in = np.array([
+ [ [[2, 0.1]], [[3, 0.2]] ],
+ [ [[0, 0.3]],[[1, 0.4]] ], ])
+x = tf.constant(x_in, dtype=tf.float32)
+kernel = tf.constant(kernel_in, dtype=tf.float32)
+tf.shape(x)
+tmp = tf.expand_dims(img0, axis=0)
+tf.shape(tmp)
+tf.shape(kernel)
+draw_array(img0)
+draw_array(tfa.image.sharpness(img0, 3.))
+draw_array(tf.where(img0 > 127.5, 255., 0.))
+gray_img0 = tf.expand_dims(tf.reduce_sum(img0, axis=-1) / 3, axis=-1)
+draw_array(gray_img0)
+import matplotlib.pyplot as plt
+gray_img0_ = tf.keras.preprocessing.image.array_to_img(gray_img0)
+threshold_filters = tf.where(gray_img0 > 127.5, 255., 0.)
+tf.keras.preprocessing.image.array_to_img(threshold_filters)
+plt.imshow(gray_img0_)
+

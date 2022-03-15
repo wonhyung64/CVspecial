@@ -35,9 +35,9 @@ def preprocessing(imgs: List) -> List:
 
     Args:
         imgs (List): imgs
-
+iasdlkfj
     Returns:
-        List: preprocessed imgs
+       List: preprocessed imgs
     """
     img0 = tf.image.resize(imgs[0], (200, 200))
     img1 = tf.image.resize(imgs[1], (200, 200))
