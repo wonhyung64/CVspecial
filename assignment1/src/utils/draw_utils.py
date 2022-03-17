@@ -11,9 +11,5 @@ def draw_array(img: tf.Tensor) -> None:
         img (tf.Tensor): tensor array img
     """
     img = tf.keras.preprocessing.image.array_to_img(img)
-    plt.axis("off")
-    plt.imshow(img)
-    plt.show()
 
-
-# %%
+    return img
