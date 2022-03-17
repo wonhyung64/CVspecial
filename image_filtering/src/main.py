@@ -7,6 +7,7 @@ from utils import (
     load_data, 
     preprocessing, 
     array_to_img,
+    draw_outputs,
     gaussian_filter,
     mean_filter,
     sharpen_filter,
@@ -59,3 +60,5 @@ if __name__ == "__main__":
         hybrid2,
     ]
 
+    for imgs in result:
+        draw_outputs(imgs)

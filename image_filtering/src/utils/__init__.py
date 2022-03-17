@@ -4,6 +4,7 @@ from .data_utils import (
 )
 from .draw_utils import (
     array_to_img,
+    draw_outputs,
 )
 from .filter_utils import(
     gray_filter,
