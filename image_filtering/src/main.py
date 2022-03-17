@@ -73,3 +73,5 @@ if __name__ == "__main__":
         if idx == 3 or idx == 4: cmap = "gray"
         else: cmap = None
         draw_outputs(result[idx], cmap)
+
+        
