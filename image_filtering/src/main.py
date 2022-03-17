@@ -4,8 +4,8 @@ import tensorflow_addons as tfa
 import tensorflow_datasets as tfds
 import matplotlib.pyplot as plt
 from utils import (
-    load_data, 
-    preprocessing, 
+    load_data,
+    preprocessing,
     array_to_img,
     draw_outputs,
     gaussian_filter,
@@ -15,6 +15,7 @@ from utils import (
     thresholding_filter,
     highpass_filter,
 )
+
 #%%
 if __name__ == "__main__":
     imgs = load_data()
@@ -26,13 +27,21 @@ if __name__ == "__main__":
     imgs_gray = [array_to_img(gray_filter(img)) for img in imgs]
     imgs_thresh = [array_to_img(thresholding_filter(gray_filter(img))) for img in imgs]
 
-    gaussian_sigma = [1., 5., 10., 30.]
-    img0_gaussian = [array_to_img(gaussian_filter(img0, 7, sigma)) for sigma in gaussian_sigma]
-    img1_gaussian = [array_to_img(gaussian_filter(img1, 7, sigma)) for sigma in gaussian_sigma]
-    img2_gaussian = [array_to_img(gaussian_filter(img2, 7, sigma)) for sigma in gaussian_sigma]
-    img3_gaussian = [array_to_img(gaussian_filter(img3, 7, sigma)) for sigma in gaussian_sigma]
+    gaussian_sigma = [1.0, 5.0, 10.0, 30.0]
+    img0_gaussian = [
+        array_to_img(gaussian_filter(img0, 7, sigma)) for sigma in gaussian_sigma
+    ]
+    img1_gaussian = [
+        array_to_img(gaussian_filter(img1, 7, sigma)) for sigma in gaussian_sigma
+    ]
+    img2_gaussian = [
+        array_to_img(gaussian_filter(img2, 7, sigma)) for sigma in gaussian_sigma
+    ]
+    img3_gaussian = [
+        array_to_img(gaussian_filter(img3, 7, sigma)) for sigma in gaussian_sigma
+    ]
 
-    detail_ext = [highpass_filter(img, gaussian_filter(img, 7, 30.)) for img in imgs]
+    detail_ext = [highpass_filter(img, gaussian_filter(img, 7, 30.0)) for img in imgs]
     hybrid1 = [
         array_to_img(detail_ext[0]),
         array_to_img(gaussian_filter(img1, 7, 30) + detail_ext[0]),
@@ -54,11 +63,14 @@ if __name__ == "__main__":
         imgs_thresh,
         img0_gaussian,
         img1_gaussian,
+        hybrid1,
         img2_gaussian,
         img3_gaussian,
-        hybrid1,
         hybrid2,
     ]
 
-    for imgs in result:
-        draw_outputs(imgs)
+    for idx in range(len(result)):
+        if idx == 3 or idx == 4: cmap = "gray"
+        else: cmap = None
+        draw_outputs(result[idx], cmap)
+#%%
