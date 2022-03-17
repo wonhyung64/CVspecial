@@ -3,7 +3,7 @@ from .data_utils import (
     preprocessing,
 )
 from .draw_utils import (
-    draw_array,
+    array_to_img,
 )
 from .filter_utils import(
     gray_filter,

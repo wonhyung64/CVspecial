@@ -3,7 +3,7 @@ import tensorflow as tf
 import matplotlib.pyplot as plt
 
 #%%
-def draw_array(img: tf.Tensor) -> None:
+def array_to_img(img: tf.Tensor) -> None:
     """
     draw tensor img
 
