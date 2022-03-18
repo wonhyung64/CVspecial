@@ -5,20 +5,20 @@
 
 ![Mean Filtering](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/mean_filter.png "mean filterd imgs")
 
-![Alt img](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/sharpness_filter.png "shaprned imgs")
+![Sharpeness Filtering](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/sharpness_filter.png "shaprned imgs")
 
-![Alt img](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/gray_filter.png "gray scale imgs")
+![Gray Scaling](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/gray_filter.png "gray scale imgs")
 
-![Alt img](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/thresholding_filter.png "thresholding filterd imgs")
+![Thresholding Filtering](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/thresholding_filter.png "thresholding filterd imgs")
 
-![Alt img](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/gaussian_filter_img1.png "gaussian1")
+![Gaussian Filtering1](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/gaussian_filter_img1.png "gaussian1")
 
-![Alt img](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/gaussian_filter_img2.png "gaussian2")
+![Gaussian Filtering2](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/gaussian_filter_img2.png "gaussian2")
 
-![Alt img](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/hybrid_img1_img2.png "hybrid1")
+![Hybrid Img1](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/hybrid_img1_img2.png "hybrid1")
 
-![Alt img](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/gaussian_filter_img3.png "gaussian3")
+![Gaussian Filtering3](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/gaussian_filter_img3.png "gaussian3")
 
-![Alt img](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/gaussian_filter_img4.png "gaussian4")
+![Gaussian Filtering4](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/gaussian_filter_img4.png "gaussian4")
 
-![Alt img](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/hybrid_img3_img4.png "hybrid2")
+![Hybrid Img2](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/hybrid_img3_img4.png "hybrid2")
