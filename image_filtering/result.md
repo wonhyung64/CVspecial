@@ -1,9 +1,9 @@
 # Image Filtering
 
 
-![Alt img](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/original.png "Original imgs")
+![Original](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/original.png "Original imgs")
 
-![Alt img](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/mean_filter.png "mean filterd imgs")
+![Mean Filtering](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/mean_filter.png "mean filterd imgs")
 
 ![Alt img](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/sharpness_filter.png "shaprned imgs")
 
