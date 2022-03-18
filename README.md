@@ -11,4 +11,4 @@
 [Google](https://google.com, "google link") 
 
 
-[Image Filtering](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/result.md, "result.md")
+[Image Filtering](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/result.md "result.md")
