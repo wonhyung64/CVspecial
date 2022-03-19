@@ -10,6 +10,7 @@ from utils import (
     gray_filter,
     thresholding_filter,
     highpass_filter,
+    view_from_far,
 )
 
 #%%
@@ -39,16 +40,16 @@ if __name__ == "__main__":
 
     detail_ext = [highpass_filter(img, gaussian_filter(img, 7, 30.0)) for img in imgs]
     hybrid1 = [
-        array_to_img(detail_ext[0]),
-        array_to_img(gaussian_filter(img1, 7, 30) + detail_ext[0]),
+        array_to_img(gaussian_filter(img0, 7, 30)),
         array_to_img(detail_ext[1]),
         array_to_img(gaussian_filter(img0, 7, 30) + detail_ext[1]),
+        array_to_img(view_from_far(gaussian_filter(img0, 7, 30) + detail_ext[1])),
     ]
     hybrid2 = [
-        array_to_img(detail_ext[2]),
-        array_to_img(gaussian_filter(img3, 7, 30) + detail_ext[2]),
+        array_to_img(gaussian_filter(img2, 7, 30)),
         array_to_img(detail_ext[3]),
         array_to_img(gaussian_filter(img2, 7, 30) + detail_ext[3]),
+        array_to_img(view_from_far(gaussian_filter(img2, 7, 30) + detail_ext[3])),
     ]
 
     result = [
@@ -59,9 +60,9 @@ if __name__ == "__main__":
         imgs_thresh,
         img0_gaussian,
         img1_gaussian,
-        hybrid1,
         img2_gaussian,
         img3_gaussian,
+        hybrid1,
         hybrid2,
     ]
 
@@ -71,3 +72,5 @@ if __name__ == "__main__":
         else:
             cmap = None
         draw_outputs(result[idx], cmap)
+
+# %%

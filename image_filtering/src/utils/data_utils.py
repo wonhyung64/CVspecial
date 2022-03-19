@@ -16,6 +16,7 @@ def load_data() -> List:
     cwd = Path(os.getcwd())
     ex_dir = f"{cwd}/ex"
     img_lst = os.listdir(ex_dir)
+    img_lst = [img for img in img_lst if r".png" in img]
 
     imgs = []
     for i in range(len(img_lst)):
