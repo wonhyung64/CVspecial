@@ -20,10 +20,11 @@
 
 ![Gaussian Filtering2](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/gaussian_filter_img2.png "gaussian2")
 
-![Hybrid Img1](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/hybrid_img1_img2.png "hybrid1")
-
 ![Gaussian Filtering3](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/gaussian_filter_img3.png "gaussian3")
 
 ![Gaussian Filtering4](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/gaussian_filter_img4.png "gaussian4")
+
+## Hybrid Image
+![Hybrid Img1](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/hybrid_img1_img2.png "hybrid1")
 
 ![Hybrid Img2](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/hybrid_img3_img4.png "hybrid2")
