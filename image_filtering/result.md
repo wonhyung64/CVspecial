@@ -15,7 +15,7 @@
 ## Thresholding Filtering
 ![Thresholding Filtering](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/thresholding_filter.png "thresholding filterd imgs")
 
-## Gaussian Filtering and Hybrid
+## Gaussian Filtering
 ![Gaussian Filtering1](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/gaussian_filter_img1.png "gaussian1")
 
 ![Gaussian Filtering2](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/gaussian_filter_img2.png "gaussian2")
