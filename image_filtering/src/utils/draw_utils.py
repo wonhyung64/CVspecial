@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import PIL
 
 #%%
-def array_to_img(img: tf.Tensor) -> None:
+def array_to_img(img: tf.Tensor) -> PIL.Image:
     """
     draw tensor img
 
