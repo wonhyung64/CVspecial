@@ -1,10 +1,10 @@
 # Edge Detection
 
 ## Original Images
-![Original](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/original.png "Original imgs")
+![Original](https://github.com/wonhyung64/CVspecial/blob/main/edge_detection/src/ex/results/original.png "Original imgs")
 
 ## Mean Filtering
-![Mean Filtering](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/mean_filter.png "mean filterd imgs")
+![Mean Filtering](https://github.com/wonhyung64/CVspecial/blob/main/edge_detection/src/ex/results/sobel.png "mean filterd imgs")
 - Mean filtering with (7, 7) kernal.
 ## Sharpeness Filtering
 ![Sharpeness Filtering](https://github.com/wonhyung64/CVspecial/blob/main/image_filtering/src/ex/results/sharpness_filter.png "shaprned imgs")
