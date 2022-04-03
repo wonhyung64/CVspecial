@@ -1,5 +1,6 @@
 import numpy as np
 import cv2
+from typing import Union
 
 
 def sobel_edge(img: np.ndarray, grad: str, kernel_size: int) -> np.ndarray:
@@ -26,7 +27,7 @@ def sobel_edge(img: np.ndarray, grad: str, kernel_size: int) -> np.ndarray:
 
 
 def canny_edge(
-    img: np.ndarray, threshold1: int or float, threshold2: int or float
+    img: np.ndarray, threshold1: Union[int, float], threshold2: int or float,
 ) -> np.ndarray:
     """
     canny edge detector

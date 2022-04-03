@@ -1,3 +1,4 @@
+from dataclasses import dataclass
 import numpy as np
 import cv2
 
@@ -65,3 +66,14 @@ def thresholding_filter(img: np.ndarray, threshold: int or float) -> np.ndarray:
     img = np.where(img > threshold, 0, 255).astype(np.uint8)
 
     return img
+
+
+class Filter:
+    """
+    하이 이건 클래스임
+    Args:
+        img ()
+    """
+    def __init__(self, img):
+        self.img = img
+        
