@@ -17,7 +17,7 @@ if __name__ == "__main__":
     img = imgs[0]
 
     img_gray = gray_filter(img)
-    img_blur = gaussian_filter(img_gray, 7, 0.)
+    img_blur = gaussian_filter(img_gray, 7, 1.)
     img_blur_log = laplassian_filter(img_gray, 5, 1)
 
     sobel_x = sobel_edge(img_blur, "x", 5)
@@ -52,7 +52,7 @@ if __name__ == "__main__":
         array_to_img(canny_edge(img_blur, threshold1=10, threshold2=130)),
     ]
 
-    canny_laplassian = [
+    laplassian = [
         array_to_img(thresholding_filter(img_blur_log, 100)),
         array_to_img(thresholding_filter(img_blur_log, 150)),
         array_to_img(thresholding_filter(img_blur_log, 200)),
@@ -64,7 +64,7 @@ if __name__ == "__main__":
         sobel,
         sobel_thresholding,
         canny_gaussian,
-        canny_laplassian,
+        laplassian,
     ]
 
     for idx in range(len(result)):
