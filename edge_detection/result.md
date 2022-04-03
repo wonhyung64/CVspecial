@@ -1,6 +1,6 @@
 # Edge Detection
 
-## Original Images
+## Images
 ![Original](https://github.com/wonhyung64/CVspecial/blob/main/edge_detection/src/ex/results/original.png "Original imgs")
 
 ## Sobel Edge Detection
